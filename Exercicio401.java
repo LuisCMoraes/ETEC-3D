@@ -13,17 +13,15 @@ package estruturadados;
 import javax.swing.JOptionPane;
 
 public class Exercicio401{
-	private static class LISTA
-	{
+	private static class LISTA{
 		String nome;
 		LISTA prox;
 	}
-	public static LISTA enfileirar(LISTA inicio, String nome)
-	{
+	
+	public static LISTA enfileirar(LISTA inicio, String nome){
 		LISTA novo, aux;
-		
-  		novo = new LISTA();
-  		novo.nome = nome;
+		novo = new LISTA();
+  		??????????????????????????????
   		novo.prox = null;
   		// inserção no fim da lista
   		if(inicio == null)
@@ -36,8 +34,8 @@ public class Exercicio401{
   		}
   		return inicio;
 	}
-	public static LISTA empilhar(LISTA topo, String nome)
-	{
+	
+	public static LISTA empilhar(LISTA topo, String nome){
 		LISTA novo;
 		// criando um novo nó e inserindo no topo da pilha
   		novo = new LISTA();
@@ -47,18 +45,17 @@ public class Exercicio401{
   		
   		return topo;
 	}	
-	public static String imprimir(LISTA l, String msg, String novamsg)
-	{
+	
+	public static String imprimir(LISTA l, String msg, String novamsg){
 		novamsg = novamsg + "\nElementos da " + msg +": ";
-		while(l != null)
-		{
-			novamsg = novamsg + "\n\t" + l.nome;
+		while(l != null){
+			????????????????????????????????
 			l = l.prox;
 		}	
 		return novamsg;
-	}	
-	public static void main(String args[])
-	{
+	}
+	
+	public static void main(String args[]){
 	  	// a lista está vazia, logo,
 	  	// os objetos fila e topo têm o valor null
 	  	// os objetos conterão o endereço 
@@ -69,16 +66,14 @@ public class Exercicio401{
 	  	String nome="", sexo, msg="";
 	  	
 		sexo = JOptionPane.showInputDialog("Digite o sexo (F/M/R-Remover/P-Parar):");
-	  	while(sexo.equalsIgnoreCase("P")==false)
-	  	{
+	  	while(sexo.equalsIgnoreCase("P")==false){
 	  		if(sexo.equalsIgnoreCase("R")==false)
-	  			nome = JOptionPane.showInputDialog("Digite o nome:");
+	  			
 	  		if(sexo.equalsIgnoreCase("F"))
 	  			fila = enfileirar(fila, nome);
-	  		else if(sexo.equalsIgnoreCase("M"))
+	  	
 	  			topo = empilhar(topo, nome);
-	  		else if(sexo.equalsIgnoreCase("R"))
-	  		{
+	  		else if(sexo.equalsIgnoreCase("R")){
 	  			msg="";
 	  			if(fila != null)
 	  				msg = "\nElemento removido: "+fila.nome;
@@ -89,8 +84,7 @@ public class Exercicio401{
 	  			msg="";
 	  			if(fila==null)
 	  				msg = "Fila Vazia.";
-	  			else
-	  			{	// remover o primeiro elemento da fila
+	  			else{	// remover o primeiro elemento da fila
 	  				fila = fila.prox;
 	  				if(fila!=null)
 	  					msg = imprimir(fila, "fila", "");
@@ -98,8 +92,7 @@ public class Exercicio401{
 	  			}
 	  			if(topo==null)
 	  				msg = msg + "\nPilha vazia.";
-	  			else
-	  			{	// remover o primeiro elemento da pilha
+	  			else{	// remover o primeiro elemento da pilha
 	  				topo = topo.prox;
 	  				if(topo!=null)
 	  					msg = imprimir(topo, "pilha", msg);
@@ -108,7 +101,7 @@ public class Exercicio401{
 	  			JOptionPane.showMessageDialog(null, msg);
 	  		}
 	  		// leitura do próximo sexo
-			sexo = JOptionPane.showInputDialog("Digite o sexo (F/M/R-Remover/P-Parar):");
+			?????????????????????????
 	  	}
 	}
 }
