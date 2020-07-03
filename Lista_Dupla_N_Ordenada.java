@@ -11,7 +11,7 @@ public class Lista_Dupla_N_Ordenada{
     private static class LISTA{
         
         public int num;
-        public LISTA prox;
+        ????????????????????????????????
         public LISTA ant;
     }
     
@@ -51,7 +51,7 @@ public class Lista_Dupla_N_Ordenada{
             }
             if (op ==1){
                 System.out.println("Digite o número a ser inserido no início da lista");
-                LISTA novo = new LISTA();
+               ???????????????????????????
                 novo.num = entrada.nextInt();
                 if(inicio == null){
                     /* a lista estava vazia
@@ -68,7 +68,7 @@ public class Lista_Dupla_N_Ordenada{
                      * será inserido no início da lista
                      */
                     novo.prox = inicio;
-                    inicio.ant = novo;
+                ???????????????????????
                     novo.ant = null;
                     inicio=novo;
                 }
@@ -108,7 +108,7 @@ public class Lista_Dupla_N_Ordenada{
                     System.out.println("\nConsultado a lista do início ao fim\n");
                     aux = inicio;
                     while (aux != null){
-                        System.out.print(aux.num+"  ");
+                     ??????????????????????????
                         aux = aux.prox;
                     }
                 }
@@ -165,7 +165,7 @@ public class Lista_Dupla_N_Ordenada{
                                 /*o némero a ser removido está
                                 * no meio da lista*/
                                 aux.ant.prox = aux.prox;
-                                aux.prox.ant = aux.ant;
+                          ????????????????????????????????????
                                 aux = aux.prox;
                             }
                         }else{
