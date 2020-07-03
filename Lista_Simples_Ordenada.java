@@ -5,7 +5,7 @@ class Lista_Simples_Ordenada{
     cada elemento da lista*/
     private static class LISTA{
         public int num;
-        public LISTA prox;
+       ??????????????????????????
     }
     
     public static void main(String args[]){
@@ -53,7 +53,7 @@ class Lista_Simples_Ordenada{
                      * o primeiro e o último
                      */
 					inicio = novo;
-					fim = novo;
+				?????????????????????
 					novo.prox = null;
                 }else{
                     /* a lista já contém elementos
@@ -63,7 +63,7 @@ class Lista_Simples_Ordenada{
                      * crescente */
                     anterior = null;
                     aux =inicio;
-                    while(aux!=null && novo.num>aux.num){
+                   ????????????????????????????
                         anterior = aux;
                         aux = aux.prox;
                     }
@@ -86,7 +86,7 @@ class Lista_Simples_Ordenada{
                          * inserido, será colocado
                          * entre dois números que
                          * já estão na lista */
-                        anterior.prox = novo;
+                      ???????????????????????????
                         novo.prox = aux;
                         
                     }
@@ -144,7 +144,7 @@ class Lista_Simples_Ordenada{
                             }else{
                                 /*o némero a ser removido está
                                 * no meio da lista*/
-                                anterior.prox = aux.prox;
+                           ???????????????????????
                                 aux = aux.prox;
                             }
                         }else{
