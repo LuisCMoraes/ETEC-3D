@@ -8,7 +8,7 @@ public class Lista_Circular_Dupla_Nao_Ordenada{
         public LISTA ant;
     }
     public static void main(String args[]){
-        Scanner entrada = new Scanner(System.in);
+      ???????????????????????????????
         /* a lista está vazia, logo, o objeto
          * inicio tem o valor null e o objeto
          * inicio conterá o endereço do 
@@ -41,7 +41,7 @@ public class Lista_Circular_Dupla_Nao_Ordenada{
             }
             if ( op==1){
                 System.out.println("Digite o número a ser inserido no início da lista");
-                LISTA novo = new LISTA();
+           ???????????????????????????????
                 novo.num = entrada.nextInt();
                 if(inicio == null){
                     /* a lista estava vazia
@@ -68,7 +68,7 @@ public class Lista_Circular_Dupla_Nao_Ordenada{
             if (op==2){
                 System.out.println("Digite um número a ser inserido no fim da lista");
                 LISTA novo = new LISTA();
-                novo.num = entrada.nextInt();
+           ????????????????????????
                 if(inicio == null){
                     /* a lista estava vazia
                      * e o elemento inserido será
@@ -86,7 +86,7 @@ public class Lista_Circular_Dupla_Nao_Ordenada{
                     fim.prox = novo;
                     novo.ant = fim;
                     fim=novo;
-                    fim.prox = inicio;
+             ??????????????????????????????????
                     inicio.ant = fim;
                 }
                 System.out.println("Número inserido no fim da Lista!!");
@@ -150,7 +150,7 @@ public class Lista_Circular_Dupla_Nao_Ordenada{
                     do{
                         /* se a lista possui apenas
                          * um elemento*/
-                        if (inicio==fim && inicio.num ==numero){
+                  ?????????????????????????????????
                             inicio = null;
                             achou++;
                         }else{
